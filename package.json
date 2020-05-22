@@ -1,0 +1,32 @@
+{
+  "name": "tailwindcss-counter",
+  "version": "1.0.0",
+  "description": "Tailwind CSS plugin to generate counter utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkomelin/tailwindcss-counter.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "tailwindcss-plugin",
+    "plugin",
+    "postcss",
+    "css"
+  ],
+  "author": "Konstantin Komelin <konstantin.komelin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kkomelin/tailwindcss-counter/issues"
+  },
+  "homepage": "https://github.com/kkomelin/tailwindcss-counter#readme",
+  "dependencies": {
+    "jest": "^26.0.1",
+    "jest-matcher-css": "^1.1.0",
+    "postcss": "^7.0.30",
+    "tailwindcss": "^1.4.6"
+  }
+}
