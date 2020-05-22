@@ -1,4 +1,3 @@
-const _ = require('lodash');
 const cssMatcher = require('jest-matcher-css');
 const postcss = require('postcss');
 const tailwindcss = require('tailwindcss');
@@ -8,12 +7,13 @@ const { uniqueCounterName } = require('./config.json');
 const generatePluginCss = (config, pluginOptions = {}) => {
   return postcss(
     tailwindcss(
-      _.merge({
+      {
+        ...config,
         corePlugins: false,
         plugins: [
           counterPlugin(pluginOptions),
         ],
-      }, config)
+      }
     )
   )
   .process('@tailwind utilities;', {
