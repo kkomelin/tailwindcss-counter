@@ -34,7 +34,7 @@ This plugin generates the following utilities:
   counter-increment: uniqueCounterName 1
 }
 .counter-decrement {
-  counter-decrement: uniqueCounterName -1
+  counter-increment: uniqueCounterName -1
 }
 .counter-result {
   content: counter(uniqueCounterName)
@@ -51,10 +51,13 @@ which you can use in your HTML like so:
 
 ```html
 <div class="counter-reset">
-  <div class="counter-increment before:counter-result"></div>
-  <div class="counter-decrement before:counter-result"></div>
-  <div class="counter-increment before:counter-result"></div>
-
-  <div class="after:counter-result">Total: </div>
+  <div class="after:counter-result">Initial: </div>
+  <div class="counter-increment after:counter-result">Incremented: </div>
+  <div class="counter-increment after:counter-result">Incremented: </div>
+  <div class="counter-increment after:counter-result">Incremented: </div>
+  <div class="counter-decrement after:counter-result">Decremented: </div>
+  <div class="counter-decrement after:counter-result">Decremented: </div>
+  <div class="counter-decrement after:counter-result">Decremented: </div>
+  <div class="before:counter-result"> is a result</div>
 </div>
 ```
