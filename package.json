@@ -4,7 +4,10 @@
   "description": "Tailwind CSS plugin to generate counter utilities",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "release:main": "node ./node_modules/release-it/bin/release-it.js $1",
+    "release:github-release": "node ./node_modules/github-release-from-changelog.js",
+    "release": "npm run release:main && npm run release:github-release"
   },
   "repository": {
     "type": "git",
