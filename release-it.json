@@ -2,7 +2,7 @@
   "init": "npm test",
   "git": {
     "tagName": "v${version}",
-    "requireCleanWorkingDir": true,
+    "requireCleanWorkingDir": false,
     "requireBranch": "master"
   },
   "github": {

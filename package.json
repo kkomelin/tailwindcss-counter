@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "release:main": "node ./node_modules/release-it/bin/release-it.js $1",
-    "release:github-release": "node ./node_modules/github-release-from-changelog.js",
-    "release": "npm run release:main && npm run release:github-release"
+    "release:main": "node ./node_modules/release-it/bin/release-it.js",
+    "release:github-release": "node ./node_modules/github-release-from-changelog/github-release-from-changelog.js",
+    "release": "f(){ npm run release:main $1 && npm run release:github-release ;};f"
   },
   "repository": {
     "type": "git",
