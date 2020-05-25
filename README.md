@@ -64,6 +64,6 @@ which you can use in your HTML like so:
 
 ## Demo
 
-A demo page is located [here](https://kkomelin.github.io/tailwindcss-counter/).
+[Take a look](https://kkomelin.github.io/tailwindcss-counter/)
 
 ![Screenshot of the demo](https://kkomelin.github.io/tailwindcss-counter/img/screenshot.png)
