@@ -61,3 +61,9 @@ which you can use in your HTML like so:
   <div class="before:counter-result"> is a result</div>
 </div>
 ```
+
+## Demo
+
+A demo page is located [here](https://kkomelin.github.io/tailwindcss-counter/).
+
+[Screenshot]: https://kkomelin.github.io/tailwindcss-counter/img/screenshot.png "Screenshot of the demo"
